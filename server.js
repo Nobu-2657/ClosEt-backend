@@ -18,7 +18,7 @@ app.use(express.json({ limit: '50mb' }));
 app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 app.use(cors());
 
-const JWT_SECRET = process.env.JWT_SECRET || 'your_jwt_secret';
+const JWT_SECRET = process.env.JWT_SECRET;
 const PORT = process.env.PORT || 3000;
 
 // --- MongoDB接続 ---
